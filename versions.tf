@@ -8,7 +8,7 @@ terraform {
     }
   }
 
-  # Remote state in S3. Replace 680160265876. use_lockfile needs Terraform 1.11 or newer.
+  # Remote state in S3. Replace 680160265876. use_lockfile needs Terraform 1.11 or newer
   backend "s3" {
     bucket       = "cicd-demo-tfstate-680160265876"
     key          = "cicd-demo/terraform.tfstate"
